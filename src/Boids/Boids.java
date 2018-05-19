@@ -23,7 +23,7 @@ public class Boids extends JPanel {
  
         spawnFlock();
  
-        new Timer(17, (ActionEvent e) -> {
+        new Timer(10, (ActionEvent e) -> {
             if (flock.hasLeftTheBuilding(w))
                 spawnFlock();
             repaint();
@@ -31,7 +31,7 @@ public class Boids extends JPanel {
     }
  
     private void spawnFlock() {
-        flock = Flock.spawn(-300, h * 0.5, 20);
+        flock = Flock.spawn(-300, h * 0.5, 50);
     }
  
     @Override
@@ -245,7 +245,7 @@ class Boid {
     }
 }
  
-class Flock {
+class q {
     List<Boid> boids;
  
     Flock() {
