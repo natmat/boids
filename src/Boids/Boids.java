@@ -245,7 +245,7 @@ class Boid {
     }
 }
  
-class q {
+class Flock {
     List<Boid> boids;
  
     Flock() {
